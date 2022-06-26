@@ -156,6 +156,11 @@ address {
 .contacts .item + .item {
   margin-left: 50px;
 }
+.mail-svg,
+.smartphone-svg {
+  text-align: justify;
+  margin-right: 10px;
+}
 .contacts .contacts-link {
   display: block;
   padding-top: 32px;
@@ -179,7 +184,16 @@ address {
   padding-top: 200px;
   padding-bottom: 200px;
 
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--hero-footer-bg-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   text-align: center;
 }
 .hero-text {
