@@ -15,6 +15,8 @@
   --header-line-cl: #ececec;
   /* borders colors*/
   --cards-border-cl: #eeeeee;
+  /* team social icons */
+  --team-social-icons: #AFB1B8;
   /* others */
   --items: 3;
   --indent: 30px;
@@ -158,9 +160,9 @@ address {
 }
 .mail-svg,
 .smartphone-svg {
-  text-align: justify;
   margin-right: 10px;
 }
+
 .contacts .contacts-link {
   display: block;
   padding-top: 32px;
@@ -172,9 +174,10 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts .contacts-link:hover,
-.contacts .contacts-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
+  fill: currentColor;
 }
 
 /* ---MAIN---STUDIO */
@@ -238,6 +241,12 @@ address {
   margin-left: 30px;
 }
 
+.strange-icons {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--section-bg-color);
+}
+
 .strange-title,
 .strange-title-text {
   color: var(--section-title-text);
@@ -289,6 +298,7 @@ address {
 /* team */
 
 .team {
+  padding-bottom: 111px;
   background-color: var(--section-bg-color);
 }
 .team-title,
@@ -305,9 +315,35 @@ address {
 }
 .team-list {
   ---items: 4;
-
   text-align: center;
 }
+.team-social-icons {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+}
+.team-icons{
+  display: block;
+  gap: 10px;
+}
+/* .team-icons:not(:last-child) {
+  margin-right: 10px;
+} */
+.team-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-bg-color);
+  border-radius: 50%;
+  fill: var(--team-social-icons);
+}
+.team-social-link:hover, .team-social-link:focus{
+fill: var(--primary-bg-color);
+background-color:var(--accent-color);
+} 
+
 .team-item {
   background-color: var(--primary-bg-color);
   border-radius: 4px;
@@ -334,8 +370,43 @@ address {
   font-size: 16px;
   line-height: 1.19;
   margin-top: 0;
+  margin-bottom: 16px;
 }
 
+/* CLIENTS */
+.clients{
+  padding-top: 0px;
+}
+.clients-logo{
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+}
+.clients-logo-icons{
+  display: block;
+  gap: 30px;
+}
+.clients-logo-icons:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-logo-link{
+  display: flex;
+
+align-items: center;
+justify-content: center;
+
+width: 170px;
+height: 92px;
+
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+background-color: var(--primary-bg-color);
+fill: var(--team-social-icons);
+}
+.clients-logo-link:hover, .clients-logo-link:focus{
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 /* ---MAIN---PORTFOLIO */
 
 .projects-list-btn {
