@@ -120,8 +120,7 @@ address {
 /* site-nav */
 .main-nav {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+
 }
 .site-nav {
   display: flex;
@@ -154,6 +153,7 @@ address {
 .contacts {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 .contacts .item + .item {
   margin-left: 50px;
@@ -161,12 +161,14 @@ address {
 .mail-svg,
 .smartphone-svg {
   margin-right: 10px;
+  
 }
 
 .contacts .contacts-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -516,9 +518,12 @@ fill: var(--team-social-icons);
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
+.footer-main{
+display: flex;
+}
 /* logo */
 .logo-web-footer {
-  display: block;
+  /* display: block; */
   margin-bottom: 20px;
 
   color: var(--secondary-text-color);
@@ -545,3 +550,39 @@ fill: var(--team-social-icons);
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-social{
+  /* display:inline-flex; */
+  /* text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100px; */
+ 
+}
+.footer-text{
+
+  margin-bottom: 20px;
+
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.footer-social-list{
+display: inline-flex;
+
+}
+.footer-social-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-bg-color);
+  border-radius: 50%;
+  fill: var(--team-social-icons);
+}
+.footer-social-link:hover, .footer-social-link:focus{
+  fill: var(--primary-bg-color);
+  background-color:var(--accent-color);
+  } 
