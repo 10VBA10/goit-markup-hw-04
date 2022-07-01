@@ -16,7 +16,7 @@
   /* borders colors*/
   --cards-border-cl: #eeeeee;
   /* team social icons */
-  --team-social-icons: #AFB1B8;
+  --team-social-icons: #afb1b8;
   /* others */
   --items: 3;
   --indent: 30px;
@@ -160,6 +160,7 @@ address {
 }
 .mail-svg,
 .smartphone-svg {
+  text-align: baseline;
   margin-right: 10px;
   
 }
@@ -324,7 +325,7 @@ address {
   padding-left: 0;
   justify-content: center;
 }
-.team-icons{
+.team-icons {
   display: block;
   gap: 10px;
 }
@@ -341,10 +342,11 @@ address {
   border-radius: 50%;
   fill: var(--team-social-icons);
 }
-.team-social-link:hover, .team-social-link:focus{
-fill: var(--primary-bg-color);
-background-color:var(--accent-color);
-} 
+.team-social-link:hover,
+.team-social-link:focus {
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
 
 .team-item {
   background-color: var(--primary-bg-color);
@@ -376,36 +378,37 @@ background-color:var(--accent-color);
 }
 
 /* CLIENTS */
-.clients{
+.clients {
   padding-top: 0px;
 }
-.clients-logo{
+.clients-logo {
   display: flex;
   padding-left: 0;
   justify-content: center;
 }
-.clients-logo-icons{
+.clients-logo-icons {
   display: block;
   gap: 30px;
 }
 .clients-logo-icons:not(:last-child) {
   margin-right: 30px;
 }
-.clients-logo-link{
+.clients-logo-link {
   display: flex;
 
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-width: 170px;
-height: 92px;
+  width: 170px;
+  height: 92px;
 
-border: 1px solid #AFB1B8;
-border-radius: 4px;
-background-color: var(--primary-bg-color);
-fill: var(--team-social-icons);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-color: var(--primary-bg-color);
+  fill: var(--team-social-icons);
 }
-.clients-logo-link:hover, .clients-logo-link:focus{
+.clients-logo-link:hover,
+.clients-logo-link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
