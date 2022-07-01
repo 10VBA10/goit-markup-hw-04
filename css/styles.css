@@ -120,7 +120,6 @@ address {
 /* site-nav */
 .main-nav {
   display: flex;
-
 }
 .site-nav {
   display: flex;
@@ -162,14 +161,12 @@ address {
 .smartphone-svg {
   text-align: baseline;
   margin-right: 10px;
-  
 }
 
 .contacts .contacts-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -443,6 +440,10 @@ address {
 .projects-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .projects-list-btn .projects-btn.current {
   background-color: var(--accent-color);
@@ -484,7 +485,12 @@ address {
 .projects-cards-item {
   background-color: var(--primary-bg-color);
 }
-
+.card-set-item:hover,
+.card-set-item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.12);
+}
 .projects-title {
   margin-bottom: 4px;
 
@@ -521,12 +527,15 @@ address {
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-main{
-display: flex;
+.footer-main {
+  display: flex;
+}
+.footer-logo-addres {
+  margin-right: 70px;
 }
 /* logo */
 .logo-web-footer {
-  /* display: block; */
+  display: block;
   margin-bottom: 20px;
 
   color: var(--secondary-text-color);
@@ -553,39 +562,33 @@ display: flex;
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-social{
-  /* display:inline-flex; */
-  /* text-align: center;
-  align-items: center;
-  justify-content: center;
-  width: 100px; */
- 
-}
-.footer-text{
-
+.footer-text {
   margin-bottom: 20px;
 
   color: var(--secondary-text-color);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  vertical-align: top;
 }
-.footer-social-list{
-display: inline-flex;
-
-}
-.footer-social-link{
+.footer-social-list {
   display: flex;
+  gap: 10px;
+}
+.footer-social-link {
+  display: flex;
+
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--primary-bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  fill: var(--team-social-icons);
+  fill: var(--secondary-text-color);
 }
-.footer-social-link:hover, .footer-social-link:focus{
-  fill: var(--primary-bg-color);
-  background-color:var(--accent-color);
-  } 
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
