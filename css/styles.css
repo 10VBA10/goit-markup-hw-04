@@ -529,6 +529,7 @@ address {
 }
 .footer-main {
   display: flex;
+  align-items: baseline;
 }
 .footer-logo-addres {
   margin-right: 70px;
