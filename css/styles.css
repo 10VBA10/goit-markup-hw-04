@@ -384,7 +384,6 @@ address {
   justify-content: center;
 }
 .clients-logo-icons {
-  display: block;
   gap: 30px;
 }
 .clients-logo-icons:not(:last-child) {
