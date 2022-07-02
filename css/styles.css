@@ -161,13 +161,14 @@ address {
 .smartphone-svg {
   text-align: baseline;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .contacts .contacts-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -177,7 +178,6 @@ address {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
-  fill: currentColor;
 }
 
 /* ---MAIN---STUDIO */
@@ -188,6 +188,7 @@ address {
   padding-bottom: 200px;
 
   max-width: 1600px;
+  height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--hero-footer-bg-color);
@@ -319,23 +320,21 @@ address {
 }
 .team-social-icons {
   display: flex;
-  padding-left: 0;
   justify-content: center;
 }
-.team-icons {
+.team-social-item {
   display: block;
-  gap: 10px;
 }
-/* .team-icons:not(:last-child) {
+.team-social-item:not(:last-child) {
   margin-right: 10px;
-} */
+}
 .team-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--primary-bg-color);
+  fill: currentColor;
   border-radius: 50%;
   fill: var(--team-social-icons);
 }
@@ -375,17 +374,11 @@ address {
 }
 
 /* CLIENTS */
-.clients {
-  padding-top: 0px;
-}
+
 .clients-logo {
   display: flex;
-  padding-left: 0;
-  justify-content: center;
 }
-.clients-logo-icons {
-  gap: 30px;
-}
+
 .clients-logo-icons:not(:last-child) {
   margin-right: 30px;
 }
@@ -398,9 +391,9 @@ address {
   width: 170px;
   height: 92px;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--team-social-icons);
   border-radius: 4px;
-  background-color: var(--primary-bg-color);
+
   fill: var(--team-social-icons);
 }
 .clients-logo-link:hover,
@@ -481,11 +474,12 @@ address {
   /* flex-shrink:1 за замовчанням, якщо ставим 0 - то забороняєм зжиматися*/
   /* flex-grow:0 за замовчанням якщо ставимо 2 то дозволяєму елементу рости в два рази - то  */
 }
-.projects-cards-item {
-  background-color: var(--primary-bg-color);
+
+.projects-cards {
+  display: block;
 }
-.card-set-item:hover,
-.card-set-item:focus {
+.projects-cards:hover,
+.projects-cards:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.06);
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.12);
@@ -568,14 +562,13 @@ address {
   color: var(--secondary-text-color);
 
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-transform: uppercase;
-  vertical-align: top;
 }
 .footer-social-list {
   display: flex;
-  gap: 10px;
+}
+.footer-social-link:not(:last-child) {
+  margin-right: 10px;
 }
 .footer-social-link {
   display: flex;
@@ -587,6 +580,9 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--secondary-text-color);
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
