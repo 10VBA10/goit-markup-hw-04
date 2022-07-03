@@ -193,7 +193,7 @@ address {
   margin-left: auto;
   background-color: var(--hero-footer-bg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/hero-bg.png);
+    url(../images/hero/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -328,19 +328,22 @@ address {
 .team-social-item:not(:last-child) {
   margin-right: 10px;
 }
+.team-svg{
+  fill: currentColor;
+}
 .team-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
-  fill: currentColor;
+ 
   border-radius: 50%;
-  fill: var(--team-social-icons);
+  color: var(--team-social-icons);
 }
 .team-social-link:hover,
 .team-social-link:focus {
-  fill: var(--primary-bg-color);
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
 
@@ -382,6 +385,9 @@ address {
 .clients-logo-icons:not(:last-child) {
   margin-right: 30px;
 }
+.clients-svg{
+  fill: currentColor;
+}
 .clients-logo-link {
   display: flex;
 
@@ -394,11 +400,11 @@ address {
   border: 1px solid var(--team-social-icons);
   border-radius: 4px;
 
-  fill: var(--team-social-icons);
+  color: var(--team-social-icons);
 }
 .clients-logo-link:hover,
 .clients-logo-link:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
 /* ---MAIN---PORTFOLIO */
@@ -570,6 +576,9 @@ address {
 .footer-social-link:not(:last-child) {
   margin-right: 10px;
 }
+.footer-social-svg{
+fill: currentColor;
+}
 .footer-social-link {
   display: flex;
 
@@ -579,7 +588,7 @@ address {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  fill: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
